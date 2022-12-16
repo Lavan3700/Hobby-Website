@@ -1,0 +1,723 @@
+:root {
+    --maincolor: rgb(34, 26, 100);
+    --secondcolor: rgb(201, 108, 33);
+}
+
+
+html {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#nav-head ul {
+    list-style: none; /* entfernt von ul die punkte */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: space-around;
+    margin: -2.5rem;
+    padding-bottom: 1rem;
+}
+
+.ul-head {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: var(--secondcolor);
+}
+
+#logo {
+    width: 10rem;
+    margin-left: 6rem;
+}
+
+a:hover {color: var(--maincolor);}
+
+#h1-start {
+   padding-top: 18rem;
+   padding-left: 6rem;
+   font-size: 100px;
+   color: var(--maincolor);
+}
+
+#start-bild {
+    width: 40%;
+    float: right;
+    margin-top: -20rem;
+    padding-right: 6rem;
+}
+
+#start-bild2 {
+    width: 40%;
+    float: right;
+    padding-right: 6rem;
+    margin-top: 0rem;
+}
+
+h2 {
+    padding-top: 12rem;
+    padding-left: 6rem;
+    font-size: 3rem;
+    color: var(--secondcolor);
+}
+
+#p-start, #p-start2 {
+    margin-left: 6rem;
+    margin-right: 60rem;
+}
+
+#footer1 {
+    margin-top: 12rem;
+}
+
+#nav-footers {
+    display: inline;
+    padding-bottom: 3rem;
+}
+
+hr {
+    background-color: var(--maincolor);
+    padding-bottom: 1rem;
+}
+
+#sec2 {padding-bottom: 7em;}
+
+#hr1 {margin-top: 3rem;}
+#hr2 {margin-bottom: 1rem;}
+
+.nav-footer1 {
+    float: left;
+    padding-left: 6rem;
+    color: var(--secondcolor);
+    padding-top: 1rem;
+}
+
+.nav-footer {
+    float: right;
+    padding-right: 6rem;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--secondcolor);
+    padding-top: 1rem;
+}
+
+/* Startseite */
+
+h1 {
+    padding-left: 6rem;
+    font-size: 500%;
+    color: var(--maincolor);
+    padding-top: 8rem;
+}
+
+#bild-geschichte1 {
+    width: 50rem;
+    float: right;
+    padding-right: 6rem;
+    margin-top: -25rem;
+}
+
+#bild-geschichte2 {
+    width: 50rem;
+    float: right;
+    padding-right: 6rem;
+    margin-top: -20rem;
+}
+
+
+#h2-geschichte {
+    padding-top: 12rem;
+    color: var(--secondcolor);
+}
+
+#hr2-geschichte {margin-top: 18.0rem;}
+
+#footer2 {margin-top: -4rem;}
+
+/* Geschichte */
+
+#bild-regeln {
+    width: 90%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+#h2-regeln {
+    color: var(--secondcolor);
+    margin-top: -5rem;
+}
+
+#p-regeln, #p-regeln3 {
+    padding-right: 6rem;
+    padding-left: 6rem;
+}
+
+#hr2-regeln {
+    margin-top: -10rem;
+}
+
+#footer3 {
+    padding-top: 17rem;
+}
+
+/* Regeln */
+
+.teams-nba {
+    padding-left: 7rem;
+    text-decoration: none;
+}
+
+.team-nba:hover {
+    color: var(--secondcolor);
+}
+
+.teams-nba > a {
+    text-decoration: none;
+}
+
+#atlanitc {
+    padding-left: 6rem;
+    padding-top: 0rem;
+}
+
+#grid-3er {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#footer4 {
+    padding-top: 14rem;
+}
+
+/* Teams */
+
+#h2-jordan {
+    margin-top: -15rem;
+}
+
+table {padding-left: 6rem;
+border-spacing: 0;}
+
+th {
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: top;
+    font-weight: 400;
+}
+
+.grau {background-color: rgb(221, 221, 221);}
+.hell {background-color: aliceblue;}
+
+#article-jordan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#jordan-img {
+    min-width: 50rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+#footer5 {padding-top: 15rem;}
+
+/* Michael Jordan */
+
+#footer6 {
+    padding-top: 10rem;
+}
+
+#slider {
+    overflow: hidden;
+    margin-top: 2rem;
+    height: 300px;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+#slider figure {
+    padding-top: 8.5rem;
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    float: left;
+    width: 20%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20%  {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+.masonryholder{
+    column-count: 4;
+    column-gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+    }
+ 
+  .masonryblocks{
+    display: inline-block;
+    background: #D2D2D2;
+    padding: 20px;
+    margin: 0 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    }
+ 
+  .masonryblocks img{
+    width: 100%;
+    }
+ 
+  @media screen and (max-width:768px){
+    .masonryholder{
+      column-count: 1;
+    }
+    }
+ 
+  @media screen and (min-width:769px){
+    .masonryholder{
+      column-count: 2;
+    }
+    }
+ 
+  @media screen and (min-width:1080px){
+    .masonryholder{
+      column-count: 3;
+    }
+    }
+ 
+  @media screen and (min-width:1200px){
+    .masonryholder{
+      column-count: 4;
+    }
+    }
+    
+    @media (max-width:1400px) {
+        #slider {
+            padding-top: 4.5rem;
+        }
+        #footer6 {
+            margin-top: 2.5rem;
+        }
+    }
+
+    /* Galerie */
+
+    .navbar {
+        display: none;
+    }
+
+    @media (max-width:1400px) {
+    #logo {
+            padding-bottom: 2rem;
+            display: block;
+            margin: 0px auto;
+        }
+        #h1-start {
+            font-size: 60px;
+            padding-top: 16rem;
+            padding-left: 0rem;
+            text-align: center;
+         }
+         #start-bild {
+            width: 90%;
+            display: block;
+            margin: auto;
+            padding-right: 0;
+            float: none;
+            padding-top: 2rem;
+        }
+        h2 {
+            padding-top: 3rem;
+            padding-left: 0rem;
+            font-size: 35px;
+            color: var(--secondcolor);
+            text-align: center;
+        }
+        #start-bild2 {
+            width: 90%;
+            display: block;
+            margin: auto;
+            float: none;
+            padding-right: 0;
+            padding-bottom: 2rem;
+            padding-top: 1rem;
+        }
+        #p-start, #p-start2 {
+            margin-left: 2rem;
+            padding-right: 2rem;
+            margin-right: 0;
+            text-align: center;
+            margin-bottom: -20rem;
+        }
+        #footer1 {
+            padding-top: 3rem;
+        }
+    }
+
+    /* Responsive start seite  */
+
+    @media (max-width:1400px) {
+    #bild-geschichte1 {
+        width: 90%;
+        padding-right: 0rem;
+        padding-left: 0rem;
+        margin-top: 0rem;
+        display: block;
+        margin: auto;
+        float: none;
+    }
+    
+    #bild-geschichte2 {
+        width: 90%;
+        padding-right: 0rem;
+        padding-left: 0rem;
+        margin-top: 0rem;
+        padding-top: 0.5rem;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    h1 {
+        padding-top: 12rem;
+        padding-left: 0rem;
+        font-size: 60px;
+        color: var(--maincolor);
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    #h2-geschichte {
+        padding-top: 3rem;
+        font-size: 35px;
+        color: var(--secondcolor);
+        display: block;
+    }
+    #p-start2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    #hr2-geschichte {margin-top: -12rem;}
+    #footer2 {
+        padding-top: 19rem;
+    }
+    }
+
+    /* Responsive Geschichte*/
+
+    @media (max-width:1400px) {
+        #h1-regeln {
+            font-size: 50px;
+            text-align: center;
+            padding-bottom: 0.5rem;
+        }
+        #bild-regeln {
+            width: 90%;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            display: block;
+            margin: auto;
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+        }
+        #p-regeln3 {
+            padding-right: 2rem;
+            padding-left: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        #hr2-regeln {
+            margin-top: -12rem;
+        }
+        #footer3 {
+            margin-top: -5rem;
+        }
+        #h2-regeln {
+            padding-top: 4rem;
+        }
+    }
+
+    /* Regeln */
+
+    @media (max-width:900px) {
+    #grid-3er {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: none;
+    }
+    .teams-nba {
+        padding-left: 7rem;
+        text-decoration: none;
+    }
+    
+    .team-nba:hover {
+        color: var(--secondcolor);
+    }
+    
+    .teams-nba > a {
+        text-decoration: none;
+    }
+    
+    #atlanitc {
+        padding-top: 1.5rem;
+        padding-left: 6rem;
+    }
+    #footer4 {margin-top: -5rem;}
+}
+
+/* Teams */
+
+@media (max-width:1405px) {
+    #h2-jordan {
+        margin-top: -3rem;
+        margin-bottom: -3rem;
+    }
+    
+    table {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-spacing: 0;
+        padding-top: 5rem;
+    }
+    
+    th {
+        padding: 0.5rem;
+        text-align: left;
+        vertical-align: top;
+        font-weight: 400;
+    }
+    
+    .grau {background-color: rgb(221, 221, 221);}
+    .hell {background-color: aliceblue;}
+    
+    #article-jordan {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #jordan-img {
+        min-width: 90%;
+        max-width: 90%;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 3rem;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media (max-width:450px) {
+    #h2-jordan {
+        margin-top: -3rem;
+        margin-bottom: -3rem;
+        font-size: 30px;
+    }
+
+    #h1-jordan {
+    font-size: 40px;
+    }
+}   /* Michael Jordan */
+
+
+    @media (max-width:1400px) {
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #nav-head {
+        display: none;
+    }
+    
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    
+    .container {
+      max-width: 1050px;
+      width: 90%;
+      margin: auto;
+    }
+    
+    .navbar {
+      width: 100%;
+      box-shadow: 0 1px 4px var(--secondcolor);
+      display: block;
+    }
+    
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 62px;
+    }
+    
+    .navbar .menu-items {
+      display: flex;
+    }
+    
+    .navbar .nav-container li {
+      list-style: none;
+    }
+    
+    .navbar .nav-container a {
+      text-decoration: none;
+      color: var(--secondcolor);
+      font-weight: 500;
+      font-size: 1.2rem;
+      padding: 0.7rem;
+    }
+    
+    .navbar .nav-container a:hover{
+        font-weight: bolder;
+    }
+    
+    .nav-container {
+      display: block;
+      position: relative;
+      height: 60px;
+    }
+    
+    .nav-container .checkbox {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 32px;
+      top: 20px;
+      left: 20px;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    .nav-container .hamburger-lines {
+      display: block;
+      height: 26px;
+      width: 32px;
+      position: absolute;
+      top: 17px;
+      left: 0rem;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .nav-container .hamburger-lines .line {
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: var(--maincolor);
+    }
+    
+    .nav-container .hamburger-lines .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
+    }
+    
+    .nav-container .hamburger-lines .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    .nav-container .hamburger-lines .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+    
+    .navbar .menu-items {
+      padding-top: 120px;
+      background-color: #fffffff5;
+      height: 100vh;
+      width: 100%;
+      transform: translate(-150%);
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+      padding-left: 50px;
+      transition: transform 0.5s ease-in-out;
+      text-align: center;
+    }
+    
+    .navbar .menu-items li {
+      margin-bottom: 1.2rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    
+    .logo {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      font-size: 1.2rem;
+      color: #0e2431;
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .menu-items {
+      transform: translateX(0);
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(45deg);
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0);
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-45deg);
+    }
+    
+    .nav-container input[type="checkbox"]:checked ~ .logo{
+      display: none;
+    }
+}
+
+    /* Ganze Burger Zeug */
+
+    header {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2; /* slider auf galerie damit es im vordergrund  its*/
+      }
+
+      /* Header immer angezeigt wird fixed */
